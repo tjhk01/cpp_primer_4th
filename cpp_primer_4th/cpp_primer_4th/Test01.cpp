@@ -2,7 +2,11 @@
 #include <string>
 #include <cstddef>
 #include <Windows.h>
+#include "cpp_primer_config.h"
+
 #include "Test01.h"
+
+#ifdef USE_TEST01_C
 
 using namespace std;
 
@@ -29,6 +33,7 @@ Test01::~Test01()
 
 int main(void)
 {
+#if 0
 	Test01 Obj1;
 
 	Sleep(1000);
@@ -40,6 +45,17 @@ int main(void)
 
 	Sleep(1000);
 	cout << "Process Done, Count : " << Obj1.getMsgCounter() << endl;
+#endif
+	string Name;
+	string Name2;
+
+	getline(cin, Name);
+	cout << Name << endl;
+
+	getline(cin, Name2);
+	cout << Name2 << endl;
 
 	return 0;
 }
+
+#endif
