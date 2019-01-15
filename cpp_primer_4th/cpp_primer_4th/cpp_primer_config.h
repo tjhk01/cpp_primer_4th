@@ -14,4 +14,8 @@
 
 //#define USE_TEST04_H
 //#define USE_TEST04_C
+
+//#define USE_TEST05_H
+//#define USE_TEST05_C
+
 #endif

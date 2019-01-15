@@ -12,6 +12,8 @@
 #ifndef __RING_BUFFER_H__
 #define __RING_BUFFER_H__
 
+#ifdef USE_TEST05_H
+
 #define ENABLE_RB
 
 #ifdef ENABLE_RB
@@ -24,6 +26,7 @@ extern bool RB_popData(RB_Handle user, void *data_addr);
 extern void RB_destroyHandle(RB_Handle user);
 extern bool RB_isEmpty(RB_Handle user);
 
+#endif
 #endif
 #endif	/* __RING_BUFFER_H__ */
 

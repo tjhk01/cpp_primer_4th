@@ -17,6 +17,8 @@
 #include <malloc.h>
 #include <errno.h>
 
+#ifdef USE_TEST05_C
+
 #include "Test05.h"
 
 #ifdef	ENABLE_RB
@@ -190,3 +192,4 @@ int main(void)
 
 #endif
 
+#endif
